@@ -1,6 +1,8 @@
 package com.ametrin.fancy_food;
 
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.config.ModConfigEvent;
 
 @Mod.EventBusSubscriber(modid = FancyFood.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class FFConfig {
@@ -35,9 +37,9 @@ public class FFConfig {
 //        return obj instanceof String itemName && BuiltInRegistries.ITEM.containsKey(new ResourceLocation(itemName));
 //    }
 //
-//    @SubscribeEvent
-//    static void onLoad(final ModConfigEvent event)
-//    {
+    @SubscribeEvent
+    private static void onLoad(final ModConfigEvent event)
+    {
 //        logDirtBlock = LOG_DIRT_BLOCK.get();
 //        magicNumber = MAGIC_NUMBER.get();
 //        magicNumberIntroduction = MAGIC_NUMBER_INTRODUCTION.get();
@@ -46,5 +48,5 @@ public class FFConfig {
 //        items = ITEM_STRINGS.get().stream()
 //                .map(itemName -> BuiltInRegistries.ITEM.get(new ResourceLocation(itemName)))
 //                .collect(Collectors.toSet());
-//    }
+    }
 }

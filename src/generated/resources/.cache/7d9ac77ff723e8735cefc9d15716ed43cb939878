@@ -1,0 +1,4 @@
+// 1.20.4	2024-03-20T19:43:01.6623092	Tags for minecraft:item mod id fancy_food
+4a898999a0f59109d1a1423fe3426d55fca7595e data/fancy_food/tags/items/cooked_flesh.json
+499baae16402b02dcee5611178b4fef7e6acf0d6 data/fancy_food/tags/items/herbs.json
+4a363af2259c5e2314c3e8780598f96cd26e4b81 data/fancy_food/tags/items/raw_flesh.json

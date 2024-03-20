@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:cooked_chicken"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "tag": "fancy_food:herbs"
+    },
+    {
+      "tag": "fancy_food:herbs"
+    }
+  ],
+  "result": {
+    "item": "fancy_food:chicken_salad"
+  }
+}
