@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_carrot": {
+    "has_cooked_chicken": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:carrot"
-            ]
+            "items": "minecraft:cooked_chicken"
           }
         ]
       },
@@ -15,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fancy_food:carrot_salad"
+        "recipe": "fancy_food:chicken_salad"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_carrot"
+      "has_cooked_chicken"
     ]
   ],
   "rewards": {
     "recipes": [
-      "fancy_food:carrot_salad"
+      "fancy_food:chicken_salad"
     ]
   }
 }

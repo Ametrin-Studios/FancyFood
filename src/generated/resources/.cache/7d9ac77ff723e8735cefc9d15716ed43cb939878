@@ -1,4 +1,5 @@
-// 1.20.4	2024-03-20T19:43:01.6623092	Tags for minecraft:item mod id fancy_food
-4a898999a0f59109d1a1423fe3426d55fca7595e data/fancy_food/tags/items/cooked_flesh.json
-499baae16402b02dcee5611178b4fef7e6acf0d6 data/fancy_food/tags/items/herbs.json
-4a363af2259c5e2314c3e8780598f96cd26e4b81 data/fancy_food/tags/items/raw_flesh.json
+// 1.21	2024-08-05T10:39:14.428688	Tags for minecraft:item mod id fancy_food
+898b6058f0745e282a55014ada9e45ae2e495ff2 data/c/tags/item/foods.json
+8111f664edb6bd7a1857e678d6c0c0e56fe2351a data/fancy_food/tags/item/cooked_meat_or_fish.json
+b4ed34628ffa6660850b7e95656410666de39108 data/fancy_food/tags/item/herbs.json
+6c379ea916db3ea5e3e960656f388a299adf6e83 data/fancy_food/tags/item/raw_meat_or_fish.json

@@ -1,5 +1,7 @@
-// 1.20.4	2024-03-20T19:43:01.6613045	Recipes
-b08e3f72992197ec99dbedae93ba223b2ca82a02 data/fancy_food/advancements/recipes/food/carrot_salad.json
-46b24ff45088ba008913febe86ef6c7826639029 data/fancy_food/advancements/recipes/food/chicken_salad.json
-1a1a91a8543f70f7bf4bdd94a1f4ec91e6387119 data/fancy_food/recipes/carrot_salad.json
-6501e84ce679c102a3b128c538aab8a3c7113039 data/fancy_food/recipes/chicken_salad.json
+// 1.21	2024-08-05T10:39:14.426692	Recipes
+b0dd61fefb97d9672693b754ede62a517483269b data/fancy_food/advancement/recipes/food/carrot_salad.json
+4b8aaff3215a6ac011aa9592138f059955d3d526 data/fancy_food/advancement/recipes/food/chicken_salad.json
+ff6139e5e22d0beaa8b65c25e75f81b9a5e48e35 data/fancy_food/advancement/recipes/food/salad.json
+45fa8ee79e12bf85b49bdff62064cc0819b0a532 data/fancy_food/recipe/carrot_salad.json
+aeec3574623163d8e2665b03bb79ac1ce1ec4059 data/fancy_food/recipe/chicken_salad.json
+de482c57369d160e604459a3555e7273b04469f8 data/fancy_food/recipe/salad.json

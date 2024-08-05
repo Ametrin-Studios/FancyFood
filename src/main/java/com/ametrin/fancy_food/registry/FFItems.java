@@ -11,4 +11,5 @@ public final class FFItems {
 
     public static final DeferredItem<Item> CARROT_SALAD = REGISTER.registerSimpleItem("carrot_salad", new Item.Properties().food(FFFoods.CARROT_SALAD).stacksTo(4));
     public static final DeferredItem<Item> CHICKEN_SALAD = REGISTER.registerSimpleItem("chicken_salad", new Item.Properties().food(FFFoods.CHICKEN_SALAD).stacksTo(4));
+    public static final DeferredItem<Item> SALAD = REGISTER.registerSimpleItem("salad", new Item.Properties().food(FFFoods.SALAD).stacksTo(4));
 }

@@ -10,7 +10,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-public class FFBlockTagsProvider extends ExtendedBlockTagsProvider {
+public final class FFBlockTagsProvider extends ExtendedBlockTagsProvider {
     public FFBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries, @Nullable ExistingFileHelper existingFileHelper) {
         super(output, registries, FancyFood.MOD_ID, existingFileHelper);
     }

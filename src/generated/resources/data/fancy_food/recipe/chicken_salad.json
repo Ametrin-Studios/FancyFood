@@ -3,19 +3,20 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:carrot"
-    },
-    {
-      "item": "minecraft:carrot"
+      "item": "minecraft:cooked_chicken"
     },
     {
       "item": "minecraft:bowl"
     },
     {
       "tag": "fancy_food:herbs"
+    },
+    {
+      "tag": "fancy_food:herbs"
     }
   ],
   "result": {
-    "item": "fancy_food:carrot_salad"
+    "count": 1,
+    "id": "fancy_food:chicken_salad"
   }
 }

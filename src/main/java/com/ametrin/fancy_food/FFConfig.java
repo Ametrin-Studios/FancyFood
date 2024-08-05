@@ -1,10 +1,10 @@
 package com.ametrin.fancy_food;
 
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.config.ModConfigEvent;
 
-@Mod.EventBusSubscriber(modid = FancyFood.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = FancyFood.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class FFConfig {
 //    private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 //
