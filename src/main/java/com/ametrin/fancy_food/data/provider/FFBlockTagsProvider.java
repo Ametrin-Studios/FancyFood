@@ -4,15 +4,13 @@ import com.ametrin.fancy_food.FancyFood;
 import com.ametrinstudios.ametrin.data.provider.ExtendedBlockTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
 public final class FFBlockTagsProvider extends ExtendedBlockTagsProvider {
-    public FFBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries, @Nullable ExistingFileHelper existingFileHelper) {
-        super(output, registries, FancyFood.MOD_ID, existingFileHelper);
+    public FFBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+        super(output, registries, FancyFood.MOD_ID);
     }
 
     @Override

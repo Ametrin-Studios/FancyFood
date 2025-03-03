@@ -1,4 +1,4 @@
-package com.ametrin.fancy_food.world;
+package com.ametrin.fancy_food.registry;
 
 import net.minecraft.world.food.FoodProperties;
 

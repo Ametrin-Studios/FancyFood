@@ -2,24 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:bowl"
-    },
-    {
-      "tag": "fancy_food:herbs"
-    },
-    {
-      "tag": "fancy_food:herbs"
-    },
-    {
-      "tag": "fancy_food:herbs"
-    },
-    {
-      "tag": "fancy_food:herbs"
-    },
-    {
-      "tag": "fancy_food:herbs"
-    }
+    "minecraft:bowl",
+    "#fancy_food:herbs",
+    "#fancy_food:herbs",
+    "#fancy_food:herbs",
+    "#fancy_food:herbs",
+    "#fancy_food:herbs"
   ],
   "result": {
     "count": 1,

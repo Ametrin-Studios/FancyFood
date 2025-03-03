@@ -8,12 +8,12 @@ import net.neoforged.fml.common.Mod;
 import org.slf4j.Logger;
 
 @Mod(FancyFood.MOD_ID)
-public class FancyFood{
+public final class FancyFood {
     public static final String MOD_ID = "fancy_food";
     private static final Logger LOGGER = LogUtils.getLogger();
 
 
-    public FancyFood(IEventBus modEventBus){
+    public FancyFood(IEventBus modEventBus) {
 //        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
         FFItems.REGISTER.register(modEventBus);
     }

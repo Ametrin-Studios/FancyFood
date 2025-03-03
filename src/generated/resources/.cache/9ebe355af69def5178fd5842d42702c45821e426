@@ -1,0 +1,7 @@
+// 1.21.4	2025-03-03T21:27:22.9333485	Model Definitions - fancy_food
+adbbd599801233ad69735cc9ad0cf0cbe2bda64e assets/fancy_food/items/carrot_salad.json
+afc883910e7c477d94f632a398a2e89336511c42 assets/fancy_food/items/chicken_salad.json
+2eba5d17ed7e0d1362d8e40ffdfa762229426935 assets/fancy_food/items/salad.json
+fb39f034ee597af31fde6ab65d4f3c02217781a1 assets/fancy_food/models/item/carrot_salad.json
+7e5a4e5b8059f15626e8f97e9b9ca05970281f09 assets/fancy_food/models/item/chicken_salad.json
+fb2d3ed65a8195a9fe6789981d7c824dcd7209f8 assets/fancy_food/models/item/salad.json

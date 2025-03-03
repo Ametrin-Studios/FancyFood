@@ -9,22 +9,41 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 public final class FFRecipeProvider extends ExtendedRecipeProvider {
 
-    public FFRecipeProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> registries) {
-        super(packOutput, FancyFood.MOD_ID, registries);
+
+    public FFRecipeProvider(HolderLookup.Provider registries, RecipeOutput output, Set<ResourceLocation> recipeSet) {
+        super(FancyFood.MOD_ID, registries, output, recipeSet);
     }
 
     @Override
-    protected void buildRecipes(@NotNull RecipeOutput recipeOutput) {
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, FFItems.CARROT_SALAD).requires(Items.CARROT, 2).requires(Items.BOWL).requires(FFTags.Items.HERBS).unlockedBy(getHasName(Items.CARROT), has(Items.CARROT)).save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, FFItems.CHICKEN_SALAD).requires(Items.COOKED_CHICKEN).requires(Items.BOWL).requires(Ingredient.of(FFTags.Items.HERBS), 2).unlockedBy(getHasName(Items.COOKED_CHICKEN), has(Items.COOKED_CHICKEN)).save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, FFItems.SALAD).requires(Items.BOWL).requires(Ingredient.of(FFTags.Items.HERBS), 5).unlockedBy(getHasName(FFTags.Items.HERBS), has(FFTags.Items.HERBS)).save(recipeOutput);
+    protected void buildRecipes() {
+        shapeless(RecipeCategory.FOOD, FFItems.CARROT_SALAD).requires(Items.CARROT, 2).requires(Items.BOWL).requires(FFTags.Items.HERBS).unlockedBy(getHasName(Items.CARROT), has(Items.CARROT)).save(output);
+        shapeless(RecipeCategory.FOOD, FFItems.CHICKEN_SALAD).requires(Items.COOKED_CHICKEN).requires(Items.BOWL).requires(tag(FFTags.Items.HERBS), 2).unlockedBy(getHasName(Items.COOKED_CHICKEN), has(Items.COOKED_CHICKEN)).save(output);
+        shapeless(RecipeCategory.FOOD, FFItems.SALAD).requires(Items.BOWL).requires(tag(FFTags.Items.HERBS), 5).unlockedBy(getHasName(FFTags.Items.HERBS), has(FFTags.Items.HERBS)).save(output);
+    }
+
+    public static class Runner extends ExtendedRecipeProvider.Runner {
+        public Runner(PackOutput output, CompletableFuture<HolderLookup.Provider> providerCompletableFuture) {
+            super(output, providerCompletableFuture);
+        }
+
+        @Override
+        protected ExtendedRecipeProvider createRecipeProvider(HolderLookup.Provider provider, RecipeOutput output, Set<ResourceLocation> recipeSet) {
+            return new FFRecipeProvider(provider, output, recipeSet);
+        }
+
+        @Override
+        public @NotNull String getName() {
+            return "Fancy Food recipes";
+        }
     }
 }

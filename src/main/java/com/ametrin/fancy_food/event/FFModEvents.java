@@ -3,8 +3,7 @@ package com.ametrin.fancy_food.event;
 import com.ametrin.fancy_food.FancyFood;
 import com.ametrin.fancy_food.data.provider.*;
 import com.ametrin.fancy_food.registry.FFItems;
-import com.ametrin.fancy_food.world.FFFoods;
-import com.ametrinstudios.ametrin.data.DataProviderHelper;
+import com.ametrin.fancy_food.registry.FFFoods;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Items;
@@ -32,12 +31,10 @@ public final class FFModEvents {
     }
 
     @SubscribeEvent
-    private static void gatherData(GatherDataEvent event) {
-        var providers = new DataProviderHelper(event);
-
-        providers.add(FFItemModelProvider::new);
-        providers.add(FFLanguageProvider::new);
-        providers.add(FFRecipeProvider::new);
-        providers.addBlockAndItemTags(FFBlockTagsProvider::new, FFItemTagsProvider::new);
+    private static void gatherData(GatherDataEvent.Client event) {
+        event.createProvider(FFModelProvider::new);
+        event.createProvider(FFLanguageProvider::new);
+        event.createProvider(FFRecipeProvider.Runner::new);
+        event.createBlockAndItemTags(FFBlockTagsProvider::new, FFItemTagsProvider::new);
     }
 }

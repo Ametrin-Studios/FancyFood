@@ -1,7 +1,6 @@
 package com.ametrin.fancy_food.registry;
 
 import com.ametrin.fancy_food.FancyFood;
-import com.ametrin.fancy_food.world.FFFoods;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
