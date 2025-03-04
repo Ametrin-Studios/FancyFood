@@ -5,7 +5,7 @@
     "minecraft:carrot",
     "minecraft:carrot",
     "minecraft:bowl",
-    "#fancy_food:herbs"
+    "#fancy_food:herbs/overworld"
   ],
   "result": {
     "count": 1,

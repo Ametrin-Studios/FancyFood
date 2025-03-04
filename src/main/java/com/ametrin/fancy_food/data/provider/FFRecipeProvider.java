@@ -25,12 +25,13 @@ public final class FFRecipeProvider extends ExtendedRecipeProvider {
 
     @Override
     protected void buildRecipes() {
-        shapeless(RecipeCategory.FOOD, FFItems.CARROT_SALAD).requires(Items.CARROT, 2).requires(Items.BOWL).requires(FFTags.Items.HERBS).unlockedBy(getHasName(Items.CARROT), has(Items.CARROT)).save(output);
+        shapeless(RecipeCategory.FOOD, FFItems.CARROT_SALAD).requires(Items.CARROT, 2).requires(Items.BOWL).requires(FFTags.Items.OVERWORLD_HERBS).unlockedBy(getHasName(Items.CARROT), has(Items.CARROT)).save(output);
 //        shapeless(RecipeCategory.FOOD, FFItems.CHICKEN_SALAD).requires(Items.COOKED_CHICKEN).requires(Items.BOWL).requires(tag(FFTags.Items.HERBS), 2).unlockedBy(getHasName(Items.COOKED_CHICKEN), has(Items.COOKED_CHICKEN)).save(output);
         shapeless(RecipeCategory.FOOD, FFItems.CHICKEN_WITH_POTATO).requires(Items.COOKED_CHICKEN).requires(Items.BOWL).requires(Items.BAKED_POTATO).requires(tag(FFTags.Items.HERBS), 1).unlockedBy(getHasName(Items.COOKED_CHICKEN), has(Items.COOKED_CHICKEN)).save(output);
+        shapeless(RecipeCategory.FOOD, FFItems.HELLISH_STEW).requires(Items.COOKED_PORKCHOP).requires(Items.BOWL).requires(tag(FFTags.Items.NETHER_HERBS), 3).unlockedBy(getHasName(FFTags.Items.NETHER_HERBS), has(FFTags.Items.NETHER_HERBS)).save(output);
         shapeless(RecipeCategory.FOOD, FFItems.POTATO_STEW).requires(Items.BOWL).requires(Items.BAKED_POTATO).requires(tag(FFTags.Items.HERBS), 2).unlockedBy(getHasName(Items.BAKED_POTATO), has(Items.BAKED_POTATO)).save(output);
-        shapeless(RecipeCategory.FOOD, FFItems.SALAD).requires(Items.BOWL).requires(tag(FFTags.Items.HERBS), 5).unlockedBy(getHasName(FFTags.Items.HERBS), has(FFTags.Items.HERBS)).save(output);
-        shapeless(RecipeCategory.FOOD, FFItems.SANDWICH, 2).requires(Tags.Items.FOODS_BREAD).requires(tag(FFTags.Items.COOKED_MEAT_OR_FISH)).requires(tag(FFTags.Items.HERBS), 2).unlockedBy(getHasName(FFTags.Items.COOKED_MEAT_OR_FISH), has(FFTags.Items.COOKED_MEAT_OR_FISH)).save(output);
+        shapeless(RecipeCategory.FOOD, FFItems.SALAD).requires(Items.BOWL).requires(tag(FFTags.Items.OVERWORLD_HERBS), 5).unlockedBy(getHasName(FFTags.Items.HERBS), has(FFTags.Items.HERBS)).save(output);
+        shapeless(RecipeCategory.FOOD, FFItems.SANDWICH, 2).requires(Tags.Items.FOODS_BREAD).requires(tag(FFTags.Items.COOKED_MEAT_OR_FISH)).requires(tag(FFTags.Items.OVERWORLD_HERBS), 2).unlockedBy(getHasName(FFTags.Items.COOKED_MEAT_OR_FISH), has(FFTags.Items.COOKED_MEAT_OR_FISH)).save(output);
     }
 
     public static class Runner extends ExtendedRecipeProvider.Runner {

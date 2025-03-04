@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     "minecraft:bowl",
-    "#fancy_food:herbs",
-    "#fancy_food:herbs",
-    "#fancy_food:herbs",
-    "#fancy_food:herbs",
-    "#fancy_food:herbs"
+    "#fancy_food:herbs/overworld",
+    "#fancy_food:herbs/overworld",
+    "#fancy_food:herbs/overworld",
+    "#fancy_food:herbs/overworld",
+    "#fancy_food:herbs/overworld"
   ],
   "result": {
     "count": 1,

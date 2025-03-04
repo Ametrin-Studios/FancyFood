@@ -30,6 +30,7 @@ public final class FFModEvents {
         event.insertAfter(Items.BREAD.getDefaultInstance(), FFItems.SANDWICH.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         event.insertAfter(Items.BEETROOT_SOUP.getDefaultInstance(), FFItems.SALAD.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         event.insertAfter(Items.BEETROOT_SOUP.getDefaultInstance(), FFItems.CARROT_SALAD.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(Items.RABBIT_STEW.getDefaultInstance(), FFItems.HELLISH_STEW.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         event.insertAfter(Items.RABBIT_STEW.getDefaultInstance(), FFItems.CHICKEN_WITH_POTATO.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         event.insertAfter(Items.RABBIT_STEW.getDefaultInstance(), FFItems.POTATO_STEW.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
     }

@@ -20,8 +20,13 @@ public final class FFItemTagsProvider extends ExtendedItemTagsProvider {
 
     @Override
     protected void addTags(@NotNull HolderLookup.Provider provider) {
-        //green stuff that has no or a positive effect in suspicious stews: https://minecraft.wiki/w/Flower#Suspicious_stew
-        tag(FFTags.Items.HERBS).add(
+        tag(FFTags.Items.HERBS)
+                .addTag(FFTags.Items.OVERWORLD_HERBS)
+                .addTag(FFTags.Items.NETHER_HERBS)
+        ;
+
+        // green stuff that has no or a positive effect in suspicious stews: https://minecraft.wiki/w/Flower#Suspicious_stew
+        tag(FFTags.Items.OVERWORLD_HERBS).add(
                 Items.POPPY,
                 Items.TORCHFLOWER,
                 Items.DANDELION,
@@ -43,7 +48,10 @@ public final class FFItemTagsProvider extends ExtendedItemTagsProvider {
 //                Items.SWEET_BERRIES,
 //                Items.GLOW_BERRIES,
                 Items.BROWN_MUSHROOM,
-                Items.RED_MUSHROOM,
+                Items.RED_MUSHROOM
+        );
+
+        tag(FFTags.Items.NETHER_HERBS).add(
                 Items.CRIMSON_FUNGUS,
                 Items.CRIMSON_ROOTS,
                 Items.WEEPING_VINES,
@@ -64,6 +72,7 @@ public final class FFItemTagsProvider extends ExtendedItemTagsProvider {
         tag(Tags.Items.FOODS).add(
                 FFItems.CARROT_SALAD.get(),
                 FFItems.CHICKEN_WITH_POTATO.get(),
+                FFItems.HELLISH_STEW.get(),
                 FFItems.POTATO_STEW.get(),
                 FFItems.SALAD.get(),
                 FFItems.SANDWICH.get()

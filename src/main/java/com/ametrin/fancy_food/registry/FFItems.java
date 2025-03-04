@@ -21,6 +21,7 @@ public final class FFItems {
     public static final DeferredItem<Item> CARROT_SALAD = REGISTER.registerSimpleItem("carrot_salad", new Item.Properties().food(FFFoods.MEDIUM).stacksTo(4));
 //    public static final DeferredItem<Item> CHICKEN_SALAD = REGISTER.registerSimpleItem("chicken_salad", new Item.Properties().food(FFFoods.CHICKEN_SALAD).stacksTo(4));
     public static final DeferredItem<Item> CHICKEN_WITH_POTATO = REGISTER.registerSimpleItem("chicken_with_potato", new Item.Properties().food(FFFoods.STRONG).stacksTo(4));
+    public static final DeferredItem<Item> HELLISH_STEW = REGISTER.registerSimpleItem("hellish_stew", new Item.Properties().food(FFFoods.STRONG).stacksTo(4));
     public static final DeferredItem<Item> POTATO_STEW = REGISTER.registerSimpleItem("potato_stew", new Item.Properties().food(FFFoods.MEDIUM).stacksTo(4));
     public static final DeferredItem<Item> SALAD = REGISTER.registerSimpleItem("salad", new Item.Properties().food(FFFoods.WEAK).stacksTo(4));
     public static final DeferredItem<Item> SANDWICH = REGISTER.registerSimpleItem("sandwich", new Item.Properties().food(FFFoods.STRONG).stacksTo(16));

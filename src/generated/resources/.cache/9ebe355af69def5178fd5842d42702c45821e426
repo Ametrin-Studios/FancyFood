@@ -1,11 +1,13 @@
-// 1.21.4	2025-03-04T10:13:15.4825421	Model Definitions - fancy_food
+// 1.21.4	2025-03-04T10:56:32.3803909	Model Definitions - fancy_food
 adbbd599801233ad69735cc9ad0cf0cbe2bda64e assets/fancy_food/items/carrot_salad.json
 f1d37a41a0c12fc6399d5bd09e430d28b3c45e69 assets/fancy_food/items/chicken_with_potato.json
+30e61bea1c77b6dbbc1781ac631a0e2c8e735c47 assets/fancy_food/items/hellish_stew.json
 c493e0d1bd23fdaadf9d5b7e21c4f3236d99c79d assets/fancy_food/items/potato_stew.json
 2eba5d17ed7e0d1362d8e40ffdfa762229426935 assets/fancy_food/items/salad.json
 cb1be337f6d5f8c3d71610e8548c37cebcca838e assets/fancy_food/items/sandwich.json
 fb39f034ee597af31fde6ab65d4f3c02217781a1 assets/fancy_food/models/item/carrot_salad.json
 e336924ad68a519af6c03236795252b680a5aa34 assets/fancy_food/models/item/chicken_with_potato.json
+f8b6a133e4502f1a1a437d65de593a116fc2a01d assets/fancy_food/models/item/hellish_stew.json
 7a6f39b1347bbb2ecf2ee62e061566f191cdc651 assets/fancy_food/models/item/potato_stew.json
 fb2d3ed65a8195a9fe6789981d7c824dcd7209f8 assets/fancy_food/models/item/salad.json
 938d74372df86a25003f026e498d70aff65b8b88 assets/fancy_food/models/item/sandwich.json
