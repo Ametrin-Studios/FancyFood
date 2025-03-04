@@ -4,11 +4,11 @@
   "ingredients": [
     "minecraft:cooked_chicken",
     "minecraft:bowl",
-    "#fancy_food:herbs",
+    "minecraft:baked_potato",
     "#fancy_food:herbs"
   ],
   "result": {
     "count": 1,
-    "id": "fancy_food:chicken_salad"
+    "id": "fancy_food:chicken_with_potato"
   }
 }

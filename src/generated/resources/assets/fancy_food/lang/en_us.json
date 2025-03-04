@@ -1,5 +1,7 @@
 {
   "item.fancy_food.carrot_salad": "Carrot Salad",
-  "item.fancy_food.chicken_salad": "Chicken Salad",
-  "item.fancy_food.salad": "Salad"
+  "item.fancy_food.chicken_with_potato": "Chicken with Baked Potato",
+  "item.fancy_food.potato_stew": "Potato Stew",
+  "item.fancy_food.salad": "Salad",
+  "item.fancy_food.sandwich": "Sandwich"
 }

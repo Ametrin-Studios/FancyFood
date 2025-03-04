@@ -1,7 +1,11 @@
-// 1.21.4	2025-03-03T21:27:22.9333485	Fancy Food recipes
+// 1.21.4	2025-03-04T10:13:15.4825421	Fancy Food recipes
 b0dd61fefb97d9672693b754ede62a517483269b data/fancy_food/advancement/recipes/food/carrot_salad.json
-4b8aaff3215a6ac011aa9592138f059955d3d526 data/fancy_food/advancement/recipes/food/chicken_salad.json
+9f84ff2165c3d94027d65b2150d9fb90ad1601f6 data/fancy_food/advancement/recipes/food/chicken_with_potato.json
+f1a025f771abea72b395ee208139f0c31fc9d307 data/fancy_food/advancement/recipes/food/potato_stew.json
 ff6139e5e22d0beaa8b65c25e75f81b9a5e48e35 data/fancy_food/advancement/recipes/food/salad.json
+aa6372c777fa42b671d4650ab16b6391bf3c4b50 data/fancy_food/advancement/recipes/food/sandwich.json
 c9863b6a5d98c41ec2d391f678fb7b1f32139a81 data/fancy_food/recipe/carrot_salad.json
-42b6da301fe20f126d024527e8376475e2da9091 data/fancy_food/recipe/chicken_salad.json
+da36c5c2678fdbc792c0fb6b89deca78283792ea data/fancy_food/recipe/chicken_with_potato.json
+b21cce033a7296cb1088b2568668e1ceee352705 data/fancy_food/recipe/potato_stew.json
 d6fbe712fd1f79136eec0c058b171948469960cf data/fancy_food/recipe/salad.json
+bcc79e5464b6f045da43081bbbe7773d60bc64ca data/fancy_food/recipe/sandwich.json

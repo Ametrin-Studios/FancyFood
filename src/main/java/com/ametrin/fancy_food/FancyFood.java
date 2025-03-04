@@ -14,7 +14,6 @@ public final class FancyFood {
 
 
     public FancyFood(IEventBus modEventBus) {
-//        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
         FFItems.REGISTER.register(modEventBus);
     }
 

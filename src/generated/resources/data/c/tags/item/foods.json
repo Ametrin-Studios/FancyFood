@@ -1,7 +1,9 @@
 {
   "values": [
-    "fancy_food:chicken_salad",
     "fancy_food:carrot_salad",
-    "fancy_food:salad"
+    "fancy_food:chicken_with_potato",
+    "fancy_food:potato_stew",
+    "fancy_food:salad",
+    "fancy_food:sandwich"
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "minecraft:baked_potato",
+    "#fancy_food:herbs",
+    "#fancy_food:herbs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "fancy_food:potato_stew"
+  }
+}

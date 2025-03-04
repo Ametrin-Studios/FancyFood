@@ -13,7 +13,9 @@ public final class FFLanguageProvider extends ExtendedLanguageProvider {
     @Override
     protected void addTranslations() {
         add(FFItems.CARROT_SALAD, "Carrot Salad");
-        add(FFItems.CHICKEN_SALAD, "Chicken Salad");
+        add(FFItems.CHICKEN_WITH_POTATO, "Chicken with Baked Potato");
+        add(FFItems.POTATO_STEW, "Potato Stew");
         add(FFItems.SALAD, "Salad");
+        add(FFItems.SANDWICH, "Sandwich");
     }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "fancy_food:item/chicken_salad"
+    "layer0": "fancy_food:item/chicken_with_potato"
   }
 }

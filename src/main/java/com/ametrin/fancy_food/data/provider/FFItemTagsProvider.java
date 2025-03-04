@@ -36,8 +36,22 @@ public final class FFItemTagsProvider extends ExtendedItemTagsProvider {
                 Items.LARGE_FERN,
                 Items.PITCHER_PLANT,
                 Items.GLOW_LICHEN,
+                Items.SEAGRASS,
+                Items.KELP,
+                Items.DRIED_KELP,
+                Items.BEETROOT,
+//                Items.SWEET_BERRIES,
+//                Items.GLOW_BERRIES,
                 Items.BROWN_MUSHROOM,
-                Items.RED_MUSHROOM);
+                Items.RED_MUSHROOM,
+                Items.CRIMSON_FUNGUS,
+                Items.CRIMSON_ROOTS,
+                Items.WEEPING_VINES,
+                Items.WARPED_FUNGUS,
+                Items.WARPED_ROOTS,
+                Items.TWISTING_VINES,
+                Items.NETHER_SPROUTS
+        );
 
         tag(FFTags.Items.RAW_MEAT_OR_FISH)
                 .addTag(Tags.Items.FOODS_RAW_MEAT)
@@ -48,9 +62,11 @@ public final class FFItemTagsProvider extends ExtendedItemTagsProvider {
                 .addTag(Tags.Items.FOODS_COOKED_FISH);
 
         tag(Tags.Items.FOODS).add(
-                FFItems.CHICKEN_SALAD.get(),
                 FFItems.CARROT_SALAD.get(),
-                FFItems.SALAD.get()
+                FFItems.CHICKEN_WITH_POTATO.get(),
+                FFItems.POTATO_STEW.get(),
+                FFItems.SALAD.get(),
+                FFItems.SANDWICH.get()
         );
     }
 }

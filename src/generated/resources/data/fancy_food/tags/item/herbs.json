@@ -14,7 +14,18 @@
     "minecraft:large_fern",
     "minecraft:pitcher_plant",
     "minecraft:glow_lichen",
+    "minecraft:seagrass",
+    "minecraft:kelp",
+    "minecraft:dried_kelp",
+    "minecraft:beetroot",
     "minecraft:brown_mushroom",
-    "minecraft:red_mushroom"
+    "minecraft:red_mushroom",
+    "minecraft:crimson_fungus",
+    "minecraft:crimson_roots",
+    "minecraft:weeping_vines",
+    "minecraft:warped_fungus",
+    "minecraft:warped_roots",
+    "minecraft:twisting_vines",
+    "minecraft:nether_sprouts"
   ]
 }
