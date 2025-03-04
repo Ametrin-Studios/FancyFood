@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:cooked_porkchop",
+    "minecraft:bowl",
+    "#fancy_food:herbs/nether",
+    "#fancy_food:herbs/nether",
+    "#fancy_food:herbs/nether"
+  ],
+  "result": {
+    "count": 1,
+    "id": "fancy_food:hellish_stew"
+  }
+}
