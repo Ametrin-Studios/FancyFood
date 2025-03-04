@@ -18,10 +18,12 @@ public class FFModelProvider extends ExtendedModelProvider {
         itemModels.generateFlatItem(FFItems.CARROT_SALAD.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(FFItems.CHICKEN_WITH_POTATO.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(FFItems.ENDER_PEARL_CAVIAR.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(FFItems.FRUIT_SALAD.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(FFItems.HELLISH_STEW.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(FFItems.HONEY_APPLE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(FFItems.POTATO_STEW.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(FFItems.SALAD.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(FFItems.SANDWICH.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(FFItems.TIRAMISU.get(), ModelTemplates.FLAT_ITEM);
     }
 }

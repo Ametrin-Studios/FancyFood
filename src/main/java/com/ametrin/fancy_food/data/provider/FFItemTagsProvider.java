@@ -76,11 +76,13 @@ public final class FFItemTagsProvider extends ExtendedItemTagsProvider {
                 FFItems.CARROT_SALAD.get(),
                 FFItems.CHICKEN_WITH_POTATO.get(),
                 FFItems.ENDER_PEARL_CAVIAR.get(),
+                FFItems.FRUIT_SALAD.get(),
                 FFItems.HELLISH_STEW.get(),
                 FFItems.HONEY_APPLE.get(),
                 FFItems.POTATO_STEW.get(),
                 FFItems.SALAD.get(),
-                FFItems.SANDWICH.get()
+                FFItems.SANDWICH.get(),
+                FFItems.TIRAMISU.get()
         );
     }
 }
