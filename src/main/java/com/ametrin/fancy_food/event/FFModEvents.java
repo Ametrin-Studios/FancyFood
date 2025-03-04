@@ -27,6 +27,8 @@ public final class FFModEvents {
     private static void modifyCreativeModeTabs(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() != CreativeModeTabs.FOOD_AND_DRINKS) return;
 
+        event.insertAfter(Items.APPLE.getDefaultInstance(), FFItems.HONEY_APPLE.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(Items.CHORUS_FRUIT.getDefaultInstance(), FFItems.ENDER_PEARL_CAVIAR.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         event.insertAfter(Items.BREAD.getDefaultInstance(), FFItems.SANDWICH.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         event.insertAfter(Items.BEETROOT_SOUP.getDefaultInstance(), FFItems.SALAD.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         event.insertAfter(Items.BEETROOT_SOUP.getDefaultInstance(), FFItems.CARROT_SALAD.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);

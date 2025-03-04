@@ -45,13 +45,12 @@ public final class FFItemTagsProvider extends ExtendedItemTagsProvider {
                 Items.KELP,
                 Items.DRIED_KELP,
                 Items.BEETROOT,
-//                Items.SWEET_BERRIES,
-//                Items.GLOW_BERRIES,
                 Items.BROWN_MUSHROOM,
                 Items.RED_MUSHROOM
         );
 
         tag(FFTags.Items.NETHER_HERBS).add(
+                Items.BLAZE_POWDER,
                 Items.CRIMSON_FUNGUS,
                 Items.CRIMSON_ROOTS,
                 Items.WEEPING_VINES,
@@ -69,10 +68,16 @@ public final class FFItemTagsProvider extends ExtendedItemTagsProvider {
                 .addTag(Tags.Items.FOODS_COOKED_MEAT)
                 .addTag(Tags.Items.FOODS_COOKED_FISH);
 
+        tag(FFTags.Items.FRUIT_OR_BERRY)
+                .addTag(Tags.Items.FOODS_FRUIT)
+                .addTag(Tags.Items.FOODS_BERRY);
+
         tag(Tags.Items.FOODS).add(
                 FFItems.CARROT_SALAD.get(),
                 FFItems.CHICKEN_WITH_POTATO.get(),
+                FFItems.ENDER_PEARL_CAVIAR.get(),
                 FFItems.HELLISH_STEW.get(),
+                FFItems.HONEY_APPLE.get(),
                 FFItems.POTATO_STEW.get(),
                 FFItems.SALAD.get(),
                 FFItems.SANDWICH.get()

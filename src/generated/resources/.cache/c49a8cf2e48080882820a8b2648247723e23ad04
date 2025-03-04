@@ -1,13 +1,17 @@
-// 1.21.4	2025-03-04T10:56:32.3803909	Fancy Food recipes
+// 1.21.4	2025-03-04T13:46:05.7669364	Fancy Food recipes
 b0dd61fefb97d9672693b754ede62a517483269b data/fancy_food/advancement/recipes/food/carrot_salad.json
 9f84ff2165c3d94027d65b2150d9fb90ad1601f6 data/fancy_food/advancement/recipes/food/chicken_with_potato.json
-082d4807998610e85d14ef484218b2e268215238 data/fancy_food/advancement/recipes/food/hellish_stew.json
+8fdfdcd7047fae5f49a7b07b25a97d1750f9d4b8 data/fancy_food/advancement/recipes/food/ender_pearl_caviar.json
+526a7ae2c1df4bf8dad5ff8899eb25b1f70d02aa data/fancy_food/advancement/recipes/food/hellish_stew.json
+e21fb941904176a0872ce5b462845267320add43 data/fancy_food/advancement/recipes/food/honey_apple.json
 f1a025f771abea72b395ee208139f0c31fc9d307 data/fancy_food/advancement/recipes/food/potato_stew.json
 ff6139e5e22d0beaa8b65c25e75f81b9a5e48e35 data/fancy_food/advancement/recipes/food/salad.json
 aa6372c777fa42b671d4650ab16b6391bf3c4b50 data/fancy_food/advancement/recipes/food/sandwich.json
 684b6e040526986be99dbda8380a06c3f2f6cf91 data/fancy_food/recipe/carrot_salad.json
 da36c5c2678fdbc792c0fb6b89deca78283792ea data/fancy_food/recipe/chicken_with_potato.json
+a0b5fabcec76100a0c7b7c2a2d3216c8e02dc7f1 data/fancy_food/recipe/ender_pearl_caviar.json
 b15e68dcfb12bbb82d6efd893ec51e545d5b3819 data/fancy_food/recipe/hellish_stew.json
+c5bbf2b9e7519599371d6d4c128f4fa0637b8cdd data/fancy_food/recipe/honey_apple.json
 b21cce033a7296cb1088b2568668e1ceee352705 data/fancy_food/recipe/potato_stew.json
 c797d953469030fbde33dcea81343305a1e8ca40 data/fancy_food/recipe/salad.json
 ce9aa48d5e1a056fd1b122cac670403335b94267 data/fancy_food/recipe/sandwich.json

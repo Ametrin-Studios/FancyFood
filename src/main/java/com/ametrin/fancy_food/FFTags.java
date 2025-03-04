@@ -14,11 +14,12 @@ public final class FFTags {
     }
 
     public static final class Items {
-        public static final TagKey<Item> HERBS = mod("herbs");
-        public static final TagKey<Item> OVERWORLD_HERBS = mod("herbs/overworld");
-        public static final TagKey<Item> NETHER_HERBS = mod("herbs/nether");
-        public static final TagKey<Item> RAW_MEAT_OR_FISH = mod("raw_meat_or_fish");
         public static final TagKey<Item> COOKED_MEAT_OR_FISH = mod("cooked_meat_or_fish");
+        public static final TagKey<Item> FRUIT_OR_BERRY = mod("fruit_or_berry");
+        public static final TagKey<Item> HERBS = mod("herbs");
+        public static final TagKey<Item> NETHER_HERBS = mod("herbs/nether");
+        public static final TagKey<Item> OVERWORLD_HERBS = mod("herbs/overworld");
+        public static final TagKey<Item> RAW_MEAT_OR_FISH = mod("raw_meat_or_fish");
         private static TagKey<Item> mod(String path) {
             return ItemTags.create(FancyFood.locate(path));
         }

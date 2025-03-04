@@ -1,7 +1,8 @@
-// 1.21.4	2025-03-04T10:56:32.3803909	Tags for minecraft:item mod id fancy_food
-63d2bdb80cac6c9d5216488f0a3d8cb205b5705d data/c/tags/item/foods.json
+// 1.21.4	2025-03-04T13:32:28.1161941	Tags for minecraft:item mod id fancy_food
+0eb9338490d967f9809e186dec327d5bed5d9a9b data/c/tags/item/foods.json
 8111f664edb6bd7a1857e678d6c0c0e56fe2351a data/fancy_food/tags/item/cooked_meat_or_fish.json
+5edf4ac6fdf324168cfd456389b78784f4dcf820 data/fancy_food/tags/item/fruit_or_berry.json
 58a62cdfa266a2fbda215cc93b81692991b8a732 data/fancy_food/tags/item/herbs.json
-a7d53fe75aaef86c46e416be6655b876481a938b data/fancy_food/tags/item/herbs/nether.json
+c9ffd566b60fedf5e6fc6772e397ce113880acdd data/fancy_food/tags/item/herbs/nether.json
 52ab7c4dd1961039b71617d64fb1c3331538d440 data/fancy_food/tags/item/herbs/overworld.json
 6c379ea916db3ea5e3e960656f388a299adf6e83 data/fancy_food/tags/item/raw_meat_or_fish.json

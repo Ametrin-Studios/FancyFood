@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_herbs_nether": {
+    "has_honey_bottle": {
       "conditions": {
         "items": [
           {
-            "items": "#fancy_food:herbs/nether"
+            "items": "minecraft:honey_bottle"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fancy_food:hellish_stew"
+        "recipe": "fancy_food:honey_apple"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_herbs_nether"
+      "has_honey_bottle"
     ]
   ],
   "rewards": {
     "recipes": [
-      "fancy_food:hellish_stew"
+      "fancy_food:honey_apple"
     ]
   }
 }
