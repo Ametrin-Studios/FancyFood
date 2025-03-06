@@ -72,9 +72,16 @@ public final class FFItemTagsProvider extends ExtendedItemTagsProvider {
                 .addTag(Tags.Items.FOODS_FRUIT)
                 .addTag(Tags.Items.FOODS_BERRY);
 
+        tag(FFTags.Items.GOLDEN_FOOD)
+                .addTag(Tags.Items.FOODS_GOLDEN)
+                .add(Items.GLISTERING_MELON_SLICE)
+                .remove(Items.ENCHANTED_GOLDEN_APPLE)
+        ;
+
         tag(Tags.Items.FOODS).add(
                 FFItems.CARROT_SALAD.get(),
                 FFItems.CHICKEN_WITH_POTATO.get(),
+                FFItems.DRAGONS_FEAST.get(),
                 FFItems.ENDER_PEARL_CAVIAR.get(),
                 FFItems.FRUIT_SALAD.get(),
                 FFItems.HELLISH_STEW.get(),

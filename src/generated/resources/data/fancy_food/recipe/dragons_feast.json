@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "#fancy_food:cooked_meat_or_fish",
+    "minecraft:popped_chorus_fruit",
+    "#fancy_food:golden_food"
+  ],
+  "result": {
+    "count": 1,
+    "id": "fancy_food:dragons_feast"
+  }
+}

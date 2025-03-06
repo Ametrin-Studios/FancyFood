@@ -3,6 +3,7 @@ package com.ametrin.fancy_food.registry;
 import net.minecraft.world.food.FoodConstants;
 import net.minecraft.world.food.FoodProperties;
 
+// saturation = nutrition * saturationMod
 public final class FFFoods {
 //    public static final FoodProperties CARROT_SALAD = simple(6, 0.7f);
 //    public static final FoodProperties CHICKEN_SALAD = simple(8, 0.8f);
@@ -12,6 +13,7 @@ public final class FFFoods {
     public static final FoodProperties MEDIUM_LOW = simple(5, 0.4f);
     public static final FoodProperties MEDIUM = simple(6, FoodConstants.FOOD_SATURATION_NORMAL);
     public static final FoodProperties STRONG = simple(8, FoodConstants.FOOD_SATURATION_GOOD);
+    public static final FoodProperties GOD = simple(12, FoodConstants.FOOD_SATURATION_GOOD);
 //    public static final FoodProperties SANDWICH = simple(4, 0.8f);
 //    public static final FoodProperties SALAD = simple(4, 0.3f);
     public static final FoodProperties SUGAR_CANE = simple(2, 0.1f);

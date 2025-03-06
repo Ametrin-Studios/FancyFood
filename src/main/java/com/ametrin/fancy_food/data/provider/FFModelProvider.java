@@ -17,6 +17,7 @@ public class FFModelProvider extends ExtendedModelProvider {
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
         itemModels.generateFlatItem(FFItems.CARROT_SALAD.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(FFItems.CHICKEN_WITH_POTATO.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(FFItems.DRAGONS_FEAST.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(FFItems.ENDER_PEARL_CAVIAR.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(FFItems.FRUIT_SALAD.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(FFItems.HELLISH_STEW.get(), ModelTemplates.FLAT_ITEM);

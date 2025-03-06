@@ -22,6 +22,7 @@ public final class FFItems {
     public static final DeferredItem<Item> CARROT_SALAD = REGISTER.registerSimpleItem("carrot_salad", new Item.Properties().food(FFFoods.MEDIUM).stacksTo(4));
 //    public static final DeferredItem<Item> CHICKEN_SALAD = REGISTER.registerSimpleItem("chicken_salad", new Item.Properties().food(FFFoods.CHICKEN_SALAD).stacksTo(4));
     public static final DeferredItem<Item> CHICKEN_WITH_POTATO = REGISTER.registerSimpleItem("chicken_with_potato", new Item.Properties().food(FFFoods.STRONG).craftRemainder(Items.BOWL).usingConvertsTo(Items.BOWL).stacksTo(4));
+    public static final DeferredItem<Item> DRAGONS_FEAST = REGISTER.registerSimpleItem("dragons_feast", new Item.Properties().food(FFFoods.GOD).stacksTo(16));
     public static final DeferredItem<Item> ENDER_PEARL_CAVIAR = REGISTER.registerSimpleItem("ender_pearl_caviar", new Item.Properties().food(FFFoods.MEDIUM_LOW).craftRemainder(Items.BOWL).usingConvertsTo(Items.BOWL).stacksTo(4));
     public static final DeferredItem<Item> FRUIT_SALAD = REGISTER.registerSimpleItem("fruit_salad", new Item.Properties().food(FFFoods.MEDIUM).craftRemainder(Items.BOWL).usingConvertsTo(Items.BOWL).stacksTo(4));
     public static final DeferredItem<Item> HELLISH_STEW = REGISTER.registerSimpleItem("hellish_stew", new Item.Properties().food(FFFoods.STRONG).craftRemainder(Items.BOWL).usingConvertsTo(Items.BOWL).stacksTo(4));

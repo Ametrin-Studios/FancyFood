@@ -1,0 +1,9 @@
+{
+  "remove": [
+    "minecraft:enchanted_golden_apple"
+  ],
+  "values": [
+    "#c:foods/golden",
+    "minecraft:glistering_melon_slice"
+  ]
+}
