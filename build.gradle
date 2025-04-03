@@ -80,7 +80,7 @@ repositories {
 
 dependencies {
     implementation "com.ametrinstudios:ametrin:${minecraft_version}-${ametrin_version}"
-    localRuntime "curse.maven:appleskin-248787:5864743"
+//    localRuntime "curse.maven:appleskin-248787:5864743"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
