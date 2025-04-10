@@ -1,4 +1,4 @@
-// 1.21.5	2025-03-28T13:09:40.51879	Fancy Food recipes
+// 1.21.1	2025-04-10T14:51:51.5163914	Recipes
 b0dd61fefb97d9672693b754ede62a517483269b data/fancy_food/advancement/recipes/food/carrot_salad.json
 9f84ff2165c3d94027d65b2150d9fb90ad1601f6 data/fancy_food/advancement/recipes/food/chicken_with_potato.json
 51b3400896b9c8afb51d6e5c797d23f856f90f96 data/fancy_food/advancement/recipes/food/dragons_feast.json
@@ -10,14 +10,14 @@ f1a025f771abea72b395ee208139f0c31fc9d307 data/fancy_food/advancement/recipes/foo
 ff6139e5e22d0beaa8b65c25e75f81b9a5e48e35 data/fancy_food/advancement/recipes/food/salad.json
 aa6372c777fa42b671d4650ab16b6391bf3c4b50 data/fancy_food/advancement/recipes/food/sandwich.json
 877c8ec4365b8108117ec6967bbf2fea19c22bb0 data/fancy_food/advancement/recipes/food/tiramisu.json
-684b6e040526986be99dbda8380a06c3f2f6cf91 data/fancy_food/recipe/carrot_salad.json
-da36c5c2678fdbc792c0fb6b89deca78283792ea data/fancy_food/recipe/chicken_with_potato.json
-4b9b9a68b2331d4345fbe8843f61a1ae391931f8 data/fancy_food/recipe/dragons_feast.json
-5867b785031329fab737791a021420d28e53cabf data/fancy_food/recipe/ender_pearl_caviar.json
-9a88d8516a1d5daae144ab139f60b048048e781b data/fancy_food/recipe/fruit_salad.json
-b15e68dcfb12bbb82d6efd893ec51e545d5b3819 data/fancy_food/recipe/hellish_stew.json
-c5bbf2b9e7519599371d6d4c128f4fa0637b8cdd data/fancy_food/recipe/honey_apple.json
-b21cce033a7296cb1088b2568668e1ceee352705 data/fancy_food/recipe/potato_stew.json
-c0c11e9b3d0c6048c45dc32d84290144fbc6d45c data/fancy_food/recipe/salad.json
-ce9aa48d5e1a056fd1b122cac670403335b94267 data/fancy_food/recipe/sandwich.json
-8097f314b7dd0793cd9bfb90dea2cc350c641839 data/fancy_food/recipe/tiramisu.json
+136854e1106339692162c83306a455999857fcdf data/fancy_food/recipe/carrot_salad.json
+f83bd1f9801b0490f3b7030fad8c381a0a6528cf data/fancy_food/recipe/chicken_with_potato.json
+d666eda2272da59d625bdbe7cf2d201fcda0adf4 data/fancy_food/recipe/dragons_feast.json
+99eaec69c7fc611f82bc7c2b7e006fba4c054933 data/fancy_food/recipe/ender_pearl_caviar.json
+52353c9641b40dc591484929338e424c65e2a290 data/fancy_food/recipe/fruit_salad.json
+40a585fc3b21af1dcd2df40a53f39a1fa9cc6c0a data/fancy_food/recipe/hellish_stew.json
+da44d0902dc7fe92329e0e93246803ff5bbef8e0 data/fancy_food/recipe/honey_apple.json
+b4aaf3229f25d52a99ccdc09ce0ed16232c4298b data/fancy_food/recipe/potato_stew.json
+74544b98f5a556e91e02047838ab92bda4e12b42 data/fancy_food/recipe/salad.json
+51629c674db1446511226297d3dfcf5730c1a2d8 data/fancy_food/recipe/sandwich.json
+36fe7f939a132f4ade4405870beb00c02c99e23d data/fancy_food/recipe/tiramisu.json

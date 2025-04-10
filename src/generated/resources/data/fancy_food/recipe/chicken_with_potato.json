@@ -2,10 +2,18 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:cooked_chicken",
-    "minecraft:bowl",
-    "minecraft:baked_potato",
-    "#fancy_food:herbs"
+    {
+      "item": "minecraft:cooked_chicken"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:baked_potato"
+    },
+    {
+      "tag": "fancy_food:herbs"
+    }
   ],
   "result": {
     "count": 1,

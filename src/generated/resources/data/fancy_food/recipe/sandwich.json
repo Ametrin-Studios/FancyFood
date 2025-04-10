@@ -2,10 +2,18 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "#c:foods/bread",
-    "#fancy_food:cooked_meat_or_fish",
-    "#fancy_food:herbs/overworld",
-    "#fancy_food:herbs/overworld"
+    {
+      "tag": "c:foods/bread"
+    },
+    {
+      "tag": "fancy_food:cooked_meat_or_fish"
+    },
+    {
+      "tag": "fancy_food:herbs/overworld"
+    },
+    {
+      "tag": "fancy_food:herbs/overworld"
+    }
   ],
   "result": {
     "count": 2,

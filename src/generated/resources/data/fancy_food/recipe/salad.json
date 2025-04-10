@@ -2,11 +2,21 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:bowl",
-    "#fancy_food:herbs/overworld",
-    "#fancy_food:herbs/overworld",
-    "#fancy_food:herbs/overworld",
-    "#fancy_food:herbs/overworld"
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "tag": "fancy_food:herbs/overworld"
+    },
+    {
+      "tag": "fancy_food:herbs/overworld"
+    },
+    {
+      "tag": "fancy_food:herbs/overworld"
+    },
+    {
+      "tag": "fancy_food:herbs/overworld"
+    }
   ],
   "result": {
     "count": 1,

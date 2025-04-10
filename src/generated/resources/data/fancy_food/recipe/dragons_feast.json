@@ -2,9 +2,15 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "#fancy_food:cooked_meat_or_fish",
-    "minecraft:popped_chorus_fruit",
-    "#fancy_food:golden_food"
+    {
+      "tag": "fancy_food:cooked_meat_or_fish"
+    },
+    {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    {
+      "tag": "fancy_food:golden_food"
+    }
   ],
   "result": {
     "count": 1,

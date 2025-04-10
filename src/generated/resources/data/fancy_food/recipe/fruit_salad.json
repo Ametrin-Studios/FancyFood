@@ -2,10 +2,18 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:bowl",
-    "#fancy_food:fruit_or_berry",
-    "#fancy_food:fruit_or_berry",
-    "#fancy_food:fruit_or_berry"
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "tag": "fancy_food:fruit_or_berry"
+    },
+    {
+      "tag": "fancy_food:fruit_or_berry"
+    },
+    {
+      "tag": "fancy_food:fruit_or_berry"
+    }
   ],
   "result": {
     "count": 2,

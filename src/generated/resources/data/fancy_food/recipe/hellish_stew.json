@@ -2,11 +2,21 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:cooked_porkchop",
-    "minecraft:bowl",
-    "#fancy_food:herbs/nether",
-    "#fancy_food:herbs/nether",
-    "#fancy_food:herbs/nether"
+    {
+      "item": "minecraft:cooked_porkchop"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "tag": "fancy_food:herbs/nether"
+    },
+    {
+      "tag": "fancy_food:herbs/nether"
+    },
+    {
+      "tag": "fancy_food:herbs/nether"
+    }
   ],
   "result": {
     "count": 1,

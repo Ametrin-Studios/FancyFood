@@ -2,10 +2,18 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:carrot",
-    "minecraft:carrot",
-    "minecraft:bowl",
-    "#fancy_food:herbs/overworld"
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "tag": "fancy_food:herbs/overworld"
+    }
   ],
   "result": {
     "count": 1,

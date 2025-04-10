@@ -2,10 +2,18 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "#c:eggs",
-    "minecraft:sugar",
-    "#c:crops/wheat",
-    "#c:crops/cocoa_bean"
+    {
+      "tag": "c:eggs"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "c:crops/wheat"
+    },
+    {
+      "tag": "c:crops/cocoa_bean"
+    }
   ],
   "result": {
     "count": 2,
