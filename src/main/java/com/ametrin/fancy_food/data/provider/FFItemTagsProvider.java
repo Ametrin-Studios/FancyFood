@@ -7,15 +7,14 @@ import com.ametrinstudios.ametrin.data.provider.ExtendedItemTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
 public final class FFItemTagsProvider extends ExtendedItemTagsProvider {
-    public FFItemTagsProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider, CompletableFuture<TagLookup<Block>> blockTagProvider) {
-        super(packOutput, lookupProvider, blockTagProvider, FancyFood.MOD_ID);
+    public FFItemTagsProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+        super(packOutput, lookupProvider, FancyFood.MOD_ID);
     }
 
     @Override

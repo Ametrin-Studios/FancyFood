@@ -1,7 +1,10 @@
 package com.ametrin.fancy_food.event;
 
 import com.ametrin.fancy_food.FancyFood;
-import com.ametrin.fancy_food.data.provider.*;
+import com.ametrin.fancy_food.data.provider.FFItemTagsProvider;
+import com.ametrin.fancy_food.data.provider.FFLanguageProvider;
+import com.ametrin.fancy_food.data.provider.FFModelProvider;
+import com.ametrin.fancy_food.data.provider.FFRecipeProvider;
 import com.ametrin.fancy_food.registry.FFFoods;
 import com.ametrin.fancy_food.registry.FFItems;
 import net.minecraft.core.component.DataComponents;
@@ -48,6 +51,6 @@ public final class FFModEvents {
         event.createProvider(FFModelProvider::new);
         event.createProvider(FFLanguageProvider::new);
         event.createProvider(FFRecipeProvider.Runner::new);
-        event.createBlockAndItemTags(FFBlockTagsProvider::new, FFItemTagsProvider::new);
+        event.createProvider(FFItemTagsProvider::new);
     }
 }
