@@ -18,8 +18,8 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.ModifyDefaultComponentsEvent;
 
 @SuppressWarnings("unused")
-@EventBusSubscriber(modid = FancyFood.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
-public final class FFModEvents {
+@EventBusSubscriber(modid = FancyFood.MOD_ID)
+public final class FFEvents {
 
     @SubscribeEvent
     private static void modifyComponents(ModifyDefaultComponentsEvent event) {
