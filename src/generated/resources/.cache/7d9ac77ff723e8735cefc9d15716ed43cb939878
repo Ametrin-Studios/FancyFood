@@ -1,4 +1,4 @@
-// 1.21.8	2025-07-17T19:10:47.6059294	Tags for minecraft:item mod id fancy_food
+// 1.21.9	2025-09-30T19:55:24.3477018	Tags for minecraft:item mod id fancy_food
 c1c509e7a7119bf56c4d5cb7e8db4dfd83471ed4 data/c/tags/item/foods.json
 8111f664edb6bd7a1857e678d6c0c0e56fe2351a data/fancy_food/tags/item/cooked_meat_or_fish.json
 5edf4ac6fdf324168cfd456389b78784f4dcf820 data/fancy_food/tags/item/fruit_or_berry.json
