@@ -1,6 +1,8 @@
 {
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/fancy-food",
   "promos": {
+    "1.21.11-latest": "0.1.2",
+    "1.21.11-recommended": "0.1.2",
     "1.21.10-latest": "0.1.2",
     "1.21.10-recommended": "0.1.2",
     "1.21.9-latest": "0.1.2",
@@ -17,6 +19,9 @@
     "1.21.4-recommended": "0.1.1",
     "1.21.1-latest": "0.1.2",
     "1.21.1-recommended": "0.1.2"
+  },
+  "1.21.11": {
+    "0.1.2": "1.21.11 port"
   },
   "1.21.10": {
     "0.1.2": "1.21.10 port"

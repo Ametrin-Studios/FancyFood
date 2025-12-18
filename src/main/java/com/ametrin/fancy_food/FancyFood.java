@@ -2,7 +2,7 @@ package com.ametrin.fancy_food;
 
 import com.ametrin.fancy_food.registry.FFItems;
 import com.mojang.logging.LogUtils;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import org.slf4j.Logger;
@@ -17,7 +17,7 @@ public final class FancyFood {
         FFItems.REGISTER.register(modEventBus);
     }
 
-    public static ResourceLocation locate(String path) {
-        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
+    public static Identifier locate(String path) {
+        return Identifier.fromNamespaceAndPath(MOD_ID, path);
     }
 }

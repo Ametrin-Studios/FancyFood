@@ -8,10 +8,9 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.Tags;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
@@ -19,7 +18,7 @@ import java.util.concurrent.CompletableFuture;
 public final class FFRecipeProvider extends ExtendedRecipeProvider {
 
 
-    public FFRecipeProvider(HolderLookup.Provider registries, RecipeOutput output, Set<ResourceLocation> recipeSet) {
+    public FFRecipeProvider(HolderLookup.Provider registries, RecipeOutput output, Set<Identifier> recipeSet) {
         super(FancyFood.MOD_ID, registries, output, recipeSet);
     }
 
@@ -44,12 +43,12 @@ public final class FFRecipeProvider extends ExtendedRecipeProvider {
         }
 
         @Override
-        protected ExtendedRecipeProvider createRecipeProvider(HolderLookup.Provider provider, RecipeOutput output, Set<ResourceLocation> recipeSet) {
+        protected ExtendedRecipeProvider createRecipeProvider(HolderLookup.Provider provider, RecipeOutput output, Set<Identifier> recipeSet) {
             return new FFRecipeProvider(provider, output, recipeSet);
         }
 
         @Override
-        public @NotNull String getName() {
+        public String getName() {
             return "Fancy Food recipes";
         }
     }

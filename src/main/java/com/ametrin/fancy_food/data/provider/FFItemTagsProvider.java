@@ -8,7 +8,6 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.Tags;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -18,7 +17,7 @@ public final class FFItemTagsProvider extends ExtendedItemTagsProvider {
     }
 
     @Override
-    protected void addTags(@NotNull HolderLookup.Provider provider) {
+    protected void addTags(HolderLookup.Provider provider) {
         tag(FFTags.Items.HERBS)
                 .addTag(FFTags.Items.OVERWORLD_HERBS)
                 .addTag(FFTags.Items.NETHER_HERBS)
