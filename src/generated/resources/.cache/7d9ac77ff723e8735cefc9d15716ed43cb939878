@@ -1,9 +1,0 @@
-// 26.1	2026-03-25T13:34:55.981829055	Tags for minecraft:item mod id fancy_food
-c1c509e7a7119bf56c4d5cb7e8db4dfd83471ed4 data/c/tags/item/foods.json
-8111f664edb6bd7a1857e678d6c0c0e56fe2351a data/fancy_food/tags/item/cooked_meat_or_fish.json
-5edf4ac6fdf324168cfd456389b78784f4dcf820 data/fancy_food/tags/item/fruit_or_berry.json
-78aeb3f278fa99c10dfefb1258f8b49c650f0863 data/fancy_food/tags/item/golden_food.json
-58a62cdfa266a2fbda215cc93b81692991b8a732 data/fancy_food/tags/item/herbs.json
-c9ffd566b60fedf5e6fc6772e397ce113880acdd data/fancy_food/tags/item/herbs/nether.json
-52ab7c4dd1961039b71617d64fb1c3331538d440 data/fancy_food/tags/item/herbs/overworld.json
-6c379ea916db3ea5e3e960656f388a299adf6e83 data/fancy_food/tags/item/raw_meat_or_fish.json
