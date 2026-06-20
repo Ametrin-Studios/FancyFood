@@ -6,7 +6,8 @@ import com.ametrin.fancy_food.registry.FFItems;
 import com.ametrinstudios.ametrin.data.provider.ExtendedItemTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.item.Items;
+import net.minecraft.references.BlockItemIds;
+import net.minecraft.references.ItemIds;
 import net.neoforged.neoforge.common.Tags;
 
 import java.util.concurrent.CompletableFuture;
@@ -16,6 +17,7 @@ public final class FFItemTagsProvider extends ExtendedItemTagsProvider {
         super(packOutput, lookupProvider, FancyFood.MOD_ID);
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(FFTags.Items.HERBS)
@@ -25,37 +27,37 @@ public final class FFItemTagsProvider extends ExtendedItemTagsProvider {
 
         // green stuff that has no or a positive effect in suspicious stews: https://minecraft.wiki/w/Flower#Suspicious_stew
         tag(FFTags.Items.OVERWORLD_HERBS).add(
-                Items.POPPY,
-                Items.TORCHFLOWER,
-                Items.DANDELION,
-                Items.BLUE_ORCHID,
-                Items.OXEYE_DAISY,
-                Items.ALLIUM,
-                Items.CORNFLOWER,
-                Items.LILAC,
-                Items.SHORT_GRASS,
-                Items.TALL_GRASS,
-                Items.FERN,
-                Items.LARGE_FERN,
-                Items.PITCHER_PLANT,
-                Items.GLOW_LICHEN,
-                Items.SEAGRASS,
-                Items.KELP,
-                Items.DRIED_KELP,
-                Items.BEETROOT,
-                Items.BROWN_MUSHROOM,
-                Items.RED_MUSHROOM
+                BlockItemIds.POPPY.item(),
+                BlockItemIds.TORCHFLOWER.item(),
+                BlockItemIds.DANDELION.item(),
+                BlockItemIds.BLUE_ORCHID.item(),
+                BlockItemIds.OXEYE_DAISY.item(),
+                BlockItemIds.ALLIUM.item(),
+                BlockItemIds.CORNFLOWER.item(),
+                BlockItemIds.LILAC.item(),
+                BlockItemIds.SHORT_GRASS.item(),
+                BlockItemIds.TALL_GRASS.item(),
+                BlockItemIds.FERN.item(),
+                BlockItemIds.LARGE_FERN.item(),
+                BlockItemIds.PITCHER_PLANT.item(),
+                BlockItemIds.GLOW_LICHEN.item(),
+                BlockItemIds.SEAGRASS.item(),
+                BlockItemIds.KELP.item(),
+                ItemIds.DRIED_KELP,
+                ItemIds.BEETROOT,
+                BlockItemIds.BROWN_MUSHROOM.item(),
+                BlockItemIds.RED_MUSHROOM.item()
         );
 
         tag(FFTags.Items.NETHER_HERBS).add(
-                Items.BLAZE_POWDER,
-                Items.CRIMSON_FUNGUS,
-                Items.CRIMSON_ROOTS,
-                Items.WEEPING_VINES,
-                Items.WARPED_FUNGUS,
-                Items.WARPED_ROOTS,
-                Items.TWISTING_VINES,
-                Items.NETHER_SPROUTS
+                ItemIds.BLAZE_POWDER,
+                BlockItemIds.CRIMSON_FUNGUS.item(),
+                BlockItemIds.CRIMSON_ROOTS.item(),
+                BlockItemIds.WEEPING_VINES.item(),
+                BlockItemIds.WARPED_FUNGUS.item(),
+                BlockItemIds.WARPED_ROOTS.item(),
+                BlockItemIds.TWISTING_VINES.item(),
+                BlockItemIds.NETHER_SPROUTS.item()
         );
 
         tag(FFTags.Items.RAW_MEAT_OR_FISH)
@@ -72,22 +74,22 @@ public final class FFItemTagsProvider extends ExtendedItemTagsProvider {
 
         tag(FFTags.Items.GOLDEN_FOOD)
                 .addTag(Tags.Items.FOODS_GOLDEN)
-                .add(Items.GLISTERING_MELON_SLICE)
-                .remove(Items.ENCHANTED_GOLDEN_APPLE)
+                .add(ItemIds.GLISTERING_MELON_SLICE)
+                .remove(ItemIds.ENCHANTED_GOLDEN_APPLE)
         ;
 
         tag(Tags.Items.FOODS).add(
-                FFItems.CARROT_SALAD.get(),
-                FFItems.CHICKEN_WITH_POTATO.get(),
-                FFItems.DRAGONS_FEAST.get(),
-                FFItems.ENDER_PEARL_CAVIAR.get(),
-                FFItems.FRUIT_SALAD.get(),
-                FFItems.HELLISH_STEW.get(),
-                FFItems.HONEY_APPLE.get(),
-                FFItems.POTATO_STEW.get(),
-                FFItems.SALAD.get(),
-                FFItems.SANDWICH.get(),
-                FFItems.TIRAMISU.get()
+                FFItems.CARROT_SALAD.getKey(),
+                FFItems.CHICKEN_WITH_POTATO.getKey(),
+                FFItems.DRAGONS_FEAST.getKey(),
+                FFItems.ENDER_PEARL_CAVIAR.getKey(),
+                FFItems.FRUIT_SALAD.getKey(),
+                FFItems.HELLISH_STEW.getKey(),
+                FFItems.HONEY_APPLE.getKey(),
+                FFItems.POTATO_STEW.getKey(),
+                FFItems.SALAD.getKey(),
+                FFItems.SANDWICH.getKey(),
+                FFItems.TIRAMISU.getKey()
         );
     }
 }

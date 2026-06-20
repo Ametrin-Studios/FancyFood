@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
   "ingredients": [
     "#c:foods/bread",
     "#fancy_food:cooked_meat_or_fish",
