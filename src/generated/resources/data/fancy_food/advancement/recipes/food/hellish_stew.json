@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fancy_food:hellish_stew"
+        "recipes": "fancy_food:hellish_stew"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

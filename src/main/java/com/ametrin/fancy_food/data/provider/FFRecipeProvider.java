@@ -4,22 +4,24 @@ import com.ametrin.fancy_food.FFTags;
 import com.ametrin.fancy_food.FancyFood;
 import com.ametrin.fancy_food.registry.FFItems;
 import com.ametrinstudios.ametrin.data.provider.ExtendedRecipeProvider;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.data.PackOutput;
+import net.minecraft.advancements.Advancement;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.MultiRegistryBootstrap;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.resources.Identifier;
+import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Recipe;
 import net.neoforged.neoforge.common.Tags;
 
+import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.CompletableFuture;
 
 public final class FFRecipeProvider extends ExtendedRecipeProvider {
 
-
-    public FFRecipeProvider(HolderLookup.Provider registries, RecipeOutput output, Set<Identifier> recipeSet) {
-        super(FancyFood.MOD_ID, registries, output, recipeSet);
+    public FFRecipeProvider(BootstrapContext<Recipe<?>> recipeOutput, BootstrapContext<Advancement> advancementOutput) {
+        super(FancyFood.MOD_ID, recipeOutput, advancementOutput, Map.of());
     }
 
     @Override
@@ -37,19 +39,17 @@ public final class FFRecipeProvider extends ExtendedRecipeProvider {
         shapeless(RecipeCategory.FOOD, FFItems.TIRAMISU, 2).requires(Tags.Items.EGGS).requires(Items.SUGAR).requires(Tags.Items.CROPS_WHEAT).requires(Tags.Items.CROPS_COCOA_BEAN).unlockedBy(getHasName(Tags.Items.CROPS_COCOA_BEAN), has(Tags.Items.CROPS_COCOA_BEAN)).save(output);
     }
 
-    public static class Runner extends ExtendedRecipeProvider.Runner {
-        public Runner(PackOutput output, CompletableFuture<HolderLookup.Provider> providerCompletableFuture) {
-            super(output, providerCompletableFuture);
-        }
+    public static MultiRegistryBootstrap create() {
+        return new MultiRegistryBootstrap() {
+            @Override
+            public Set<ResourceKey<? extends Registry<?>>> requestedRegistries() {
+                return Set.of(Registries.RECIPE, Registries.ADVANCEMENT);
+            }
 
-        @Override
-        protected ExtendedRecipeProvider createRecipeProvider(HolderLookup.Provider provider, RecipeOutput output, Set<Identifier> recipeSet) {
-            return new FFRecipeProvider(provider, output, recipeSet);
-        }
-
-        @Override
-        public String getName() {
-            return "Fancy Food recipes";
-        }
+            @Override
+            public void run(MultiRegistryBootstrap.BootstrapGetter registries) {
+                new FFRecipeProvider(registries.get(Registries.RECIPE), registries.get(Registries.ADVANCEMENT)).buildRecipes();
+            }
+        };
     }
 }

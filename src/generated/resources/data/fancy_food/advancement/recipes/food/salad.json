@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fancy_food:salad"
+        "recipes": "fancy_food:salad"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

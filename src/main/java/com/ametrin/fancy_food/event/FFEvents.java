@@ -7,6 +7,7 @@ import com.ametrin.fancy_food.data.provider.FFModelProvider;
 import com.ametrin.fancy_food.data.provider.FFRecipeProvider;
 import com.ametrin.fancy_food.registry.FFFoods;
 import com.ametrin.fancy_food.registry.FFItems;
+import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -23,7 +24,7 @@ public final class FFEvents {
 
     @SubscribeEvent
     private static void modifyComponents(ModifyDefaultComponentsEvent event) {
-        event.modify(Items.SUGAR_CANE, builder -> builder.set(DataComponents.FOOD, FFFoods.SUGAR_CANE));
+        event.modify(Items.SUGAR_CANE, (builder, _, _) -> builder.set(DataComponents.FOOD, FFFoods.SUGAR_CANE));
     }
 
     @SubscribeEvent
@@ -48,9 +49,13 @@ public final class FFEvents {
 
     @SubscribeEvent
     private static void gatherData(GatherDataEvent.Client event) {
+
+        event.createReloadableRegistryObjects(new RegistrySetBuilder()
+                .add(FFRecipeProvider.create())
+        );
+
         event.createProvider(FFModelProvider::new);
         event.createProvider(FFLanguageProvider::new);
-        event.createProvider(FFRecipeProvider.Runner::new);
         event.createProvider(FFItemTagsProvider::new);
     }
 }

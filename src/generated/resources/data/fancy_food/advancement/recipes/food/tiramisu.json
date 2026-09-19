@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fancy_food:tiramisu"
+        "recipes": "fancy_food:tiramisu"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

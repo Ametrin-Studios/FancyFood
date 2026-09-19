@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fancy_food:honey_apple"
+        "recipes": "fancy_food:honey_apple"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

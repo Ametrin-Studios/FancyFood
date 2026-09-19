@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fancy_food:dragons_feast"
+        "recipes": "fancy_food:dragons_feast"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

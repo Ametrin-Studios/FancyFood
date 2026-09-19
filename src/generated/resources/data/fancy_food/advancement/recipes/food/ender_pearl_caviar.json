@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fancy_food:ender_pearl_caviar"
+        "recipes": "fancy_food:ender_pearl_caviar"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fancy_food:potato_stew"
+        "recipes": "fancy_food:potato_stew"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
