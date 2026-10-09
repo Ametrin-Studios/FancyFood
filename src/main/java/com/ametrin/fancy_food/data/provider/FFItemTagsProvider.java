@@ -79,17 +79,17 @@ public final class FFItemTagsProvider extends ExtendedItemTagsProvider {
         ;
 
         tag(Tags.Items.FOODS).add(
-                FFItems.CARROT_SALAD.getKey(),
-                FFItems.CHICKEN_WITH_POTATO.getKey(),
-                FFItems.DRAGONS_FEAST.getKey(),
-                FFItems.ENDER_PEARL_CAVIAR.getKey(),
-                FFItems.FRUIT_SALAD.getKey(),
-                FFItems.HELLISH_STEW.getKey(),
-                FFItems.HONEY_APPLE.getKey(),
-                FFItems.POTATO_STEW.getKey(),
-                FFItems.SALAD.getKey(),
-                FFItems.SANDWICH.getKey(),
-                FFItems.TIRAMISU.getKey()
+                FFItems.CARROT_SALAD.key(),
+                FFItems.CHICKEN_WITH_POTATO.key(),
+                FFItems.DRAGONS_FEAST.key(),
+                FFItems.ENDER_PEARL_CAVIAR.key(),
+                FFItems.FRUIT_SALAD.key(),
+                FFItems.HELLISH_STEW.key(),
+                FFItems.HONEY_APPLE.key(),
+                FFItems.POTATO_STEW.key(),
+                FFItems.SALAD.key(),
+                FFItems.SANDWICH.key(),
+                FFItems.TIRAMISU.key()
         );
     }
 }

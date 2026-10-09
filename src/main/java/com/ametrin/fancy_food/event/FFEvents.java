@@ -7,7 +7,6 @@ import com.ametrin.fancy_food.data.provider.FFModelProvider;
 import com.ametrin.fancy_food.data.provider.FFRecipeProvider;
 import com.ametrin.fancy_food.registry.FFFoods;
 import com.ametrin.fancy_food.registry.FFItems;
-import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -15,6 +14,7 @@ import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
+import net.neoforged.neoforge.data.event.GatherDataRegistryEntriesEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.ModifyDefaultComponentsEvent;
 
@@ -48,11 +48,13 @@ public final class FFEvents {
     }
 
     @SubscribeEvent
+    private static void gatherRegistryEntries(GatherDataRegistryEntriesEvent event) {
+        event.add(FFRecipeProvider.create());
+    }
+
+    @SubscribeEvent
     private static void gatherData(GatherDataEvent.Client event) {
 
-        event.createReloadableRegistryObjects(new RegistrySetBuilder()
-                .add(FFRecipeProvider.create())
-        );
 
         event.createProvider(FFModelProvider::new);
         event.createProvider(FFLanguageProvider::new);
