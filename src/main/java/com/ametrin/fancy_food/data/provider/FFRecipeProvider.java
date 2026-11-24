@@ -14,19 +14,17 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.Tags;
-import org.jetbrains.annotations.NotNull;
 
+import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.concurrent.CompletableFuture;
 
 public final class FFRecipeProvider extends ExtendedRecipeProvider {
-
-
     public FFRecipeProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> registries) {
-        super(packOutput, FancyFood.MOD_ID, registries);
+        super(FancyFood.MOD_ID, packOutput, registries);
     }
 
-    @Override
-    protected void buildRecipes(@NotNull RecipeOutput output) {
+    @Override @ParametersAreNonnullByDefault
+    protected void buildRecipes(RecipeOutput output, HolderLookup.Provider registries) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, FFItems.CARROT_SALAD).requires(Items.CARROT, 2).requires(Items.BOWL).requires(FFTags.Items.OVERWORLD_HERBS).unlockedBy(getHasName(Items.CARROT), has(Items.CARROT)).save(output);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, FFItems.CHICKEN_WITH_POTATO).requires(Items.COOKED_CHICKEN).requires(Items.BOWL).requires(Items.BAKED_POTATO).requires(FFTags.Items.HERBS).unlockedBy(getHasName(Items.COOKED_CHICKEN), has(Items.COOKED_CHICKEN)).save(output);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, FFItems.DRAGONS_FEAST).requires(FFTags.Items.COOKED_MEAT_OR_FISH).requires(Items.POPPED_CHORUS_FRUIT).requires(FFTags.Items.GOLDEN_FOOD).unlockedBy(getHasName(Items.CHORUS_FRUIT), has(Items.CHORUS_FRUIT)).save(output); // intentionally not unlocked by popped chorus fruit because most people will never have this in their inventory

@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.moddev' version '2.0.80'
+    id 'net.neoforged.moddev' version '2.0.148'
     id 'idea'
 }
 
@@ -11,6 +11,25 @@ tasks.named('wrapper', Wrapper).configure {
 
 version = mod_version
 group = mod_group_id
+
+sourceSets.main.resources {
+    srcDir('src/generated/resources')
+
+    exclude("src/generated/**/.cache") // datagen cache files
+}
+
+repositories {
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    maven {
+        name "Ametrin Studios Maven"
+        url "https://github.com/Ametrin-Studios/maven/raw/main/"
+    }
+}
 
 base {
     archivesName = "$mod_id-$minecraft_version"
@@ -58,29 +77,13 @@ neoForge {
     }
 }
 
-sourceSets.main.resources { srcDir 'src/generated/resources' }
-
 configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
-repositories {
-    mavenLocal()
-
-    maven {
-        url "https://cursemaven.com"
-        content {
-            includeGroup "curse.maven"
-        }
-    }
-    maven {
-        url "https://github.com/BarionLP/MCModsMaven/raw/main/"
-    }
-}
-
 dependencies {
-    implementation "com.ametrinstudios:ametrin:${minecraft_version}-${ametrin_version}"
-    localRuntime "curse.maven:appleskin-248787:5586600"
+    implementation "com.ametrinstudios:ametrin-${minecraft_version}:${ametrin_version}"
+//    localRuntime "curse.maven:appleskin-248787:5586600"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
@@ -106,7 +109,6 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
     from "src/main/templates"
     into "build/generated/sources/modMetadata"
 }
-
 sourceSets.main.resources.srcDir generateModMetadata
 neoForge.ideSyncTask generateModMetadata
 

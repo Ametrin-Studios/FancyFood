@@ -4,7 +4,6 @@ import com.ametrin.fancy_food.FancyFood;
 import com.ametrin.fancy_food.data.provider.*;
 import com.ametrin.fancy_food.registry.FFFoods;
 import com.ametrin.fancy_food.registry.FFItems;
-import com.ametrinstudios.ametrin.data.DataProviderHelper;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -16,7 +15,7 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.ModifyDefaultComponentsEvent;
 
 @SuppressWarnings("unused")
-@EventBusSubscriber(modid = FancyFood.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = FancyFood.MOD_ID)
 public final class FFModEvents {
 
     @SubscribeEvent
@@ -46,11 +45,9 @@ public final class FFModEvents {
 
     @SubscribeEvent
     private static void gatherData(GatherDataEvent event) {
-        var helper = new DataProviderHelper(event);
-
-        helper.add(FFItemModelProvider::new);
-        helper.add(FFLanguageProvider::new);
-        helper.add(FFRecipeProvider::new);
-        helper.addBlockAndItemTags(FFBlockTagsProvider::new, FFItemTagsProvider::new);
+        event.createProvider((output) -> new FFItemModelProvider(output, event.getExistingFileHelper()));
+        event.createProvider(FFLanguageProvider::new);
+        event.createProvider(FFRecipeProvider::new);
+        event.createBlockAndItemTags((output, registries) -> new FFBlockTagsProvider(output, registries, event.getExistingFileHelper()), (packOutput, lookupProvider, blockTagProvider) -> new FFItemTagsProvider(packOutput, lookupProvider, blockTagProvider, event.getExistingFileHelper()));
     }
 }
