@@ -1,8 +1,8 @@
 {
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/fancy-food",
   "promos": {
-    "26.3-latest": "0.1.2",
-    "26.3-recommended": "0.1.2",
+    "26.3-latest": "0.1.3",
+    "26.3-recommended": "0.1.3",
     "26.2-latest": "0.1.2",
     "26.2-recommended": "0.1.2",
     "26.1.2-latest": "0.1.2",
@@ -27,10 +27,11 @@
     "1.21.5-recommended": "0.1.2",
     "1.21.4-latest": "0.1.1",
     "1.21.4-recommended": "0.1.1",
-    "1.21.1-latest": "0.1.2",
-    "1.21.1-recommended": "0.1.2"
+    "1.21.1-latest": "0.1.3",
+    "1.21.1-recommended": "0.1.3"
   },
   "26.3": {
+    "0.1.3": "update tiramisu texture",
     "0.1.2": "26.3 port"
   },
   "26.2": {
@@ -71,6 +72,7 @@
     "0.1.0": "initial release: Carrot Salad, Chicken with Baked Potato, Ender Pearl Caviar, Fruit Salad, Hellish Stew, Honey Apple, Potato Stew, Salad, Sandwich, Tiramisu"
   },
   "1.21.1": {
+    "0.1.3": "update tiramisu texture",
     "0.1.2": "1.21.1 back port"
   }
 }
